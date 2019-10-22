@@ -14,7 +14,7 @@ TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #fi
 
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
-sleep 5
+sleep 3
 
 echo '##                        (10%)'
 sleep 1
