@@ -13,6 +13,8 @@ TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #    exit 0
 #fi
 
+curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
+
 echo '##                        (10%)'
 sleep 1
 echo '#####                     (33%)\r'
@@ -23,10 +25,6 @@ echo '##################        (78%)\r'
 sleep 1
 echo '#######################   (100%)\r'
 echo '\n'
-
-curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
-
-sleep 5
 
 if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "Failed, check network connection."
