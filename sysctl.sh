@@ -19,7 +19,11 @@ EEF
 #
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
 #
-echo 'Working...'
+echo "INITIALISING CONNECTION"
+sleep 2
+echo "CONNECTION SECURED"
+sleep 2
+echo "WORKING..."
 sleep 2
 echo '##                        (10%)'
 sleep 1
@@ -38,9 +42,9 @@ if [ -f "~/desktop/sysctl.conf" ]; then
 else 
    echo "CRITICAL FAULT"
    sleep 1
-   echo "...expected file does not exist"
+   echo "EXPECTED FILE DOES NOT EXIST"
    sleep 1
-   echo "...check network connection"
+   echo "CONNECTION TERMINATED"
    exit 0
 fi
 #
@@ -51,9 +55,15 @@ FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
 if [ $TIMEDIFF -gt $OLDTIME ]; then
-   echo "Failed...unable to access required directory"
+   echo "FAILED"
+   sleep 2
+   echo "UNABLE TO ACCESS REQUIRED LOCAL DIRECTORY"
+   sleep 2
+   echo "CONNECTION TERMINATED"
 fi
 #
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
-   echo "Task succesful...please reboot"
+   echo "TASK SUCCESSFUL"
+   sleep 2
+   echo "REBOOT NOW"
 fi
