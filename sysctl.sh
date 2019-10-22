@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 #sipChecker=sudo csrutil status
 #disableSIP=Please disable SIP and re-run script.
