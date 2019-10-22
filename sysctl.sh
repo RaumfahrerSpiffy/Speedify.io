@@ -41,7 +41,7 @@ TIMEDIFF=$(expr $CURTIME - $FILETIME)
 if [ -f "$FILE" ]; then
    echo "Download complete."
 else 
-    echo "Critical fault. Expected file does not exist. Check network connection."
+   echo "Critical fault. Expected file does not exist. Check network connection."
    exit 0
 fi
 #
