@@ -10,12 +10,12 @@ cat << EEF
 ===================================================
 EEF
 #
-#sipChecker=sudo csrutil status
-#disableSIP=Please disable SIP and re-run script.
-#if [ "${sipChecker}" != "enabled." ]; then
-#    echo "${disableSIP}";
-#    exit 0
-#fi
+sipChecker=sudo csrutil status
+disableSIP=Please disable SIP and re-run script.
+if [ "${sipChecker}" != "enabled." ]; then
+    echo "${disableSIP}";
+    exit 0
+fi
 #
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
 #
