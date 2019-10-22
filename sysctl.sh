@@ -31,6 +31,6 @@ if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "Failed, check network connection."
 fi
 
-if [ $OLDTIME < $TIMEDIFF ]; then 
+if [ $OLDTIME -lt $TIMEDIFF ]; then 
    echo "Completed succesfully. Please reboot."
 fi
