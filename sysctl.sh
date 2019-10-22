@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sipChecker=sudo csrutil status
+#sipChecker=sudo csrutil status
 disableSIP=Please disable SIP and re-run script.
 FILE=~/desktop/sysctl.conf
 OLDTIME=2
@@ -14,6 +14,7 @@ TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #fi
 
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
+sleep 5
 
 echo '##                        (10%)'
 sleep 1
