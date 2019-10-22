@@ -19,6 +19,7 @@ EEF
 #
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/desktop/sysctl.conf -s
 #
+sed G
 echo "INITIALISING CONNECTION"
 sleep 2
 echo "CONNECTION SECURED"
@@ -55,6 +56,8 @@ CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
+sed G
+#
 if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "CRITICAL FAULT"
    sleep 2
@@ -62,6 +65,8 @@ if [ $TIMEDIFF -gt $OLDTIME ]; then
    sleep 2
    echo "CONNECTION TERMINATED"
 fi
+#
+sed G
 #
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
    echo "TASK SUCCESSFUL"
