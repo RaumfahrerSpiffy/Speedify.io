@@ -8,10 +8,10 @@ CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 
-if [ "${sipChecker}" != "disabled." ]; then
-    echo "${disableSIP}";
-    exit 0
-fi
+#if [ "${sipChecker}" != "disabled." ]; then
+#    echo "${disableSIP}";
+#    exit 0
+#fi
 
 echo '##                        (10%)'
 sleep 1
