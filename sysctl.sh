@@ -6,7 +6,7 @@ EEF
 #
 SIPchecker=($(csrutil status | awk '{ print $5 }'))
 if [ "$SIPchecker" != "disabled." ]; then
-    echo "Please disable *System Integrity Protection* and re-run script."
+    echo "Disable System Integrity Protection, then re-run script."
     echo "Refer to README for help.";
     exit 0
 fi
