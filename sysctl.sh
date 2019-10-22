@@ -39,6 +39,10 @@ CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
+if [ $FILENAME = "No such file or directory" ]; then
+   exit 0
+fi
+#
 if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "Failed. Check network connection."
 fi
