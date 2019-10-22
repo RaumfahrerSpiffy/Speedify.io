@@ -10,10 +10,8 @@ cat << EEF
 ===================================================
 EEF
 #
-sipChecker=csrutil status
-disableSIP=Please disable System Integrity Protection and re-run script.
-if [ "$sipChecker" = "enabled." ]; then
-    echo "$disableSIP";
+if [ "$csrutil status" = "enabled." ]; then
+    echo "Please disable System Integrity Protection and re-run script.";
     exit 0
 fi
 #
