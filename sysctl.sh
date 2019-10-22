@@ -50,7 +50,7 @@ else
 fi
 #
 FILE=~/desktop/sysctl.conf
-OLDTIME=10
+OLDTIME=20
 CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
