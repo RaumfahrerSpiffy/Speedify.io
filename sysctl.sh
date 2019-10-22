@@ -1,11 +1,9 @@
-sudo
-
-echo -ne '#####                     (33%)\r'
-sleep 1
-echo -ne '#############             (66%)\r'
-sleep 1
-echo -ne '#######################   (100%)\r'
-echo -ne '\n'
+sudo echo '#####                     (33%)\r'
+sleep 2
+echo '#############             (66%)\r'
+sleep 2
+echo '#######################   (100%)\r'
+echo '\n'
 
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
 
