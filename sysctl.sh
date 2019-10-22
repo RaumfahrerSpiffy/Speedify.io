@@ -1,4 +1,4 @@
-sudo echo '##                     (10%)
+sudo echo '##                     (10%)'
 sleep 1
 echo '#####                     (33%)\r'
 sleep 1
