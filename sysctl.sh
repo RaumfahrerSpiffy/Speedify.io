@@ -3,7 +3,7 @@
 sipChecker=sudo csrutil status
 disableSIP=Please disable SIP and re-run script.
 FILE=/etc/sysctl.conf
-OLDTIME=10
+OLDTIME=2
 CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
@@ -25,6 +25,8 @@ echo '#######################   (100%)\r'
 echo '\n'
 
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
+
+sleep 5
 
 if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "Failed, check network connection."
