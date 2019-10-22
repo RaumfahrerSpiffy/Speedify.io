@@ -1,7 +1,11 @@
-sudo echo '#####                     (33%)\r'
-sleep 2
+sudo echo '##                     (10%)
+sleep 1
+echo '#####                     (33%)
+sleep 1
 echo '#############             (66%)\r'
-sleep 2
+sleep 1
+echo '##################   (78%)\r'
+sleep 1
 echo '#######################   (100%)\r'
 echo '\n'
 
