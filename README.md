@@ -6,13 +6,12 @@ This script will output a configuration file for macOS and other Unix-like syste
 
 ## Usage
 
-1. Run this script in Terminal and enter your password when prompted.
+Run this script in Terminal and enter your password when prompted.
 
 ```bash
 sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o /etc/sysctl.conf -s
 ```
-
-2. Reboot
+Reboot
 
 ## *Note:* 
 System Integrity Protection must be disabled to access the intended file location. To disable, reboot into the Recovery Partition by pressing ⌘+R at boot until the Apple logo appears. 
@@ -20,10 +19,10 @@ Run this command in Terminal:
 ```bash
 csrutil disable
 ```
-Reboot.
+Reboot
 
 After using the script you can re-enable SIP by swapping the above command with:
 ```bash
 csrutil enable
 ```
-Reboot.
+Reboot
