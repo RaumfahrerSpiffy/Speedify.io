@@ -41,9 +41,9 @@ if [ -e "~/desktop/sysctl.conf" ]; then
    echo "Download complete."
 else 
    echo "CRITICAL FAULT"
-   sleep 1
+   sleep 2
    echo "EXPECTED FILE DOES NOT EXIST"
-   sleep 1
+   sleep 2
    echo "CONNECTION TERMINATED"
    exit 0
 fi
