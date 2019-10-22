@@ -12,6 +12,7 @@ EEF
 #SIPchecker=($(csrutil status | awk '{ print $5 }'))
 #if [ "$SIPchecker" != "disabled." ]; then
 #    echo "Disable SYSTEM INTEGRITY PROTECTION...then re-run script"
+#    sleep 1
 #    echo "Refer to README for help";
 #    exit 0
 #fi
@@ -35,7 +36,11 @@ sleep 1
 if [ -f "~/desktop/sysctl.conf" ]; then
    echo "Download complete."
 else 
-   echo "Critical fault...expected file does not exist...check network connection"
+   echo "CRITICAL FAULT"
+   sleep 1
+   echo "...expected file does not exist"
+   sleep 1
+   echo "...check network connection"
    exit 0
 fi
 #
