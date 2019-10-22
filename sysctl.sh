@@ -10,9 +10,9 @@ cat << EEF
 ===================================================
 EEF
 #
-sipChecker=sudo csrutil status
+sipChecker=csrutil status
 disableSIP=Please disable SIP and re-run script.
-if [ "${sipChecker}" != "enabled." ]; then
+if [ "${sipChecker}" = "enabled." ]; then
     echo "${disableSIP}";
     exit 0
 fi
