@@ -32,18 +32,18 @@ echo '#######################   (100%)\r'
 echo '\n'
 sleep 1
 #
-FILE=~/desktop/sysctl.conf
-OLDTIME=10
-CURTIME=$(date +%s)
-FILETIME=$(stat -t %s -f %m $FILE)
-TIMEDIFF=$(expr $CURTIME - $FILETIME)
-#
-if [ -f "$FILE" ]; then
+if [ -f "~/desktop/sysctl.conf" ]; then
    echo "Download complete."
 else 
    echo "Critical fault. Expected file does not exist. Check network connection."
    exit 0
 fi
+#
+FILE=~/desktop/sysctl.conf
+OLDTIME=10
+CURTIME=$(date +%s)
+FILETIME=$(stat -t %s -f %m $FILE)
+TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
 if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "Failed. Unable to access required directory."
