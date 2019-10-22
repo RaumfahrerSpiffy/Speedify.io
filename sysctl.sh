@@ -10,14 +10,14 @@
 #===================================================
 EEF
 #
-SIPchecker=($(csrutil status | awk '{ print $5 }'))
-if [ "$SIPchecker" != "disabled." ]; then
-    echo "Disable SYSTEM INTEGRITY PROTECTION, then re-run script."
-    echo "Refer to README for help.";
-    exit 0
-fi
+#SIPchecker=($(csrutil status | awk '{ print $5 }'))
+#if [ "$SIPchecker" != "disabled." ]; then
+#    echo "Disable SYSTEM INTEGRITY PROTECTION, then re-run script."
+#    echo "Refer to README for help.";
+#    exit 0
+#fi
 #
-curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
+#curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
 #
 echo 'Working...'
 sleep 2
