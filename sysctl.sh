@@ -11,8 +11,8 @@ EEF
 #
 #SIPchecker=($(csrutil status | awk '{ print $5 }'))
 #if [ "$SIPchecker" != "disabled." ]; then
-#    echo "Disable SYSTEM INTEGRITY PROTECTION, then re-run script."
-#    echo "Refer to README for help.";
+#    echo "Disable SYSTEM INTEGRITY PROTECTION...then re-run script"
+#    echo "Refer to README for help";
 #    exit 0
 #fi
 #
@@ -35,7 +35,7 @@ sleep 1
 if [ -f "~/desktop/sysctl.conf" ]; then
    echo "Download complete."
 else 
-   echo "Critical fault. Expected file does not exist. Check network connection."
+   echo "Critical fault...expected file does not exist...check network connection"
    exit 0
 fi
 #
@@ -46,9 +46,9 @@ FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
 if [ $TIMEDIFF -gt $OLDTIME ]; then
-   echo "Failed. Unable to access required directory."
+   echo "Failed...unable to access required directory"
 fi
 #
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
-   echo "Task succesful. Please reboot."
+   echo "Task succesful...please reboot"
 fi
