@@ -17,7 +17,7 @@ EEF
 #    exit 0
 #fi
 #
-curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
+curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/desktop/sysctl.conf -s
 #
 echo "INITIALISING CONNECTION"
 sleep 2
@@ -35,7 +35,7 @@ echo '###################       (78%)\r'
 sleep 1
 echo '#######################   (100%)\r'
 echo '\n'
-sleep 1
+sleep 2
 #
 if [ -f "~/desktop/sysctl.conf" ]; then
    echo "Download complete."
