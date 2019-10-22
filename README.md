@@ -11,7 +11,7 @@ This script will output a configuration file for macOS and other Unix-like syste
 Run this script in Terminal and enter your password when prompted.
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/speedify.io/master/sysctl.sh)"
 ```
 Reboot.
 
