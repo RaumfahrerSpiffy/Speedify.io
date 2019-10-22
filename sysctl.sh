@@ -37,7 +37,7 @@ echo '#######################   (100%)\r'
 echo '\n'
 sleep 2
 #
-if [ "~/desktop/sysctl.conf" ]; then
+if [ -e "~/desktop/sysctl.conf" ]; then
    echo "Download complete."
 else 
    echo "CRITICAL FAULT"
