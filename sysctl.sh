@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo csrutil status | if enabled 
+sudo csrutil status | if enabled.
 then 
   echo Stop 
 exit 1
