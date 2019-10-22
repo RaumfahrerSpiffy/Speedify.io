@@ -1,6 +1,6 @@
 sudo echo '##                     (10%)
 sleep 1
-echo '#####                     (33%)
+echo '#####                     (33%)\r'
 sleep 1
 echo '#############             (66%)\r'
 sleep 1
