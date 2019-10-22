@@ -4,7 +4,7 @@
 2. Run this script in Terminal and enter your password when prompted.
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/hidpi.io/master/hidpi.sh)"
+sudo curl -O ~/desktop/ https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf
 ```
 
 3. Reboot
