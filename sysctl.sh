@@ -11,7 +11,8 @@
 ===================================================
 EEF
 #
-if [ "csrutil status" = "enabled." ]; then
+SIPchecker=csrutil status
+if [ "$SIPchecker" = "enabled." ]; then
     echo "Please disable System Integrity Protection and re-run script.";
     exit 0
 fi
