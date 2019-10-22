@@ -10,7 +10,7 @@ cat << EEF
 ===================================================
 EEF
 #
-if [ "$csrutil status" = "enabled." ]; then
+if [ "csrutil status" = "enabled." ]; then
     echo "Please disable System Integrity Protection and re-run script.";
     exit 0
 fi
