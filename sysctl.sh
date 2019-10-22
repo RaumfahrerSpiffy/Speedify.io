@@ -1,21 +1,12 @@
 #!/bin/bash
 #
 cat << EEF
-===================================================
-  _____                     _ _  __         _       
- / ____|                   | (_)/ _|       (_)      
-| (___  _ __   ___  ___  __| |_| |_ _   _   _  ___  
- \___ \| '_ \ / _ \/ _ \/ _` | |  _| | | | | |/ _ \ 
- ____) | |_) |  __/  __/ (_| | | | | |_| |_| | (_) |
-|_____/| .__/ \___|\___|\__,_|_|_|  \__, (_)_|\___/ 
-       | |                           __/ |          
-       |_|                          |___/                                                                                                  
-===================================================
+test
 EEF
 #
 SIPchecker=($(csrutil status | awk '{ print $5 }'))
 if [ "$SIPchecker" != "disabled." ]; then
-    echo "Please disable System Integrity Protection and re-run script.";
+    echo "Please disable *System Integrity Protection* and re-run script.";
     exit 0
 fi
 #
