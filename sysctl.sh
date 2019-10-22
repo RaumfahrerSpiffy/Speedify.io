@@ -13,8 +13,8 @@ cat << EEF
 ===================================================
 EEF
 #
-SIPchecker=csrutil status
-if [ "$SIPchecker" = "enabled." ]; then
+SIPchecker=($(csrutil status | awk '{ print $5 }'))
+if [ "$SIPchecker" != "disabled." ]; then
     echo "Please disable System Integrity Protection and re-run script.";
     exit 0
 fi
