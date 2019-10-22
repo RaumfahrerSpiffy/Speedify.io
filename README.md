@@ -4,7 +4,7 @@
 2. Run this script in Terminal and enter your password when prompted.
 
 ```bash
-curl -O -fsSL ~/Desktop/sysctl.conf https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf
+sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o /etc/sysctl.conf 
 ```
 
 3. Reboot
