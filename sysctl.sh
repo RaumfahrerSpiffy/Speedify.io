@@ -1,9 +1,10 @@
 #!/bin/bash
 
-sudo csrutil status | if enabled.
-then 
-  echo Stop 
-exit 1
+sipChecker=sudo csrutil status
+
+if [ "${sipChecker}" != "disabled." ]; then
+    echo "${disableSIP}";
+    exit 0
 fi
 
 echo '##                        (10%)'
