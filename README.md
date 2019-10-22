@@ -14,7 +14,8 @@ sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/
 
 2. Reboot
 
-*Note:* System Integrity Protection must be disabled to access the intended file location. To disable, reboot into the Recovery Partition by pressing ⌘+R at boot until the Apple logo appears. 
+## *Note:* 
+System Integrity Protection must be disabled to access the intended file location. To disable, reboot into the Recovery Partition by pressing ⌘+R at boot until the Apple logo appears. 
 Run this command in Terminal:
 ```bash
 csrutil disable
