@@ -17,7 +17,7 @@ EEF
 #    exit 0
 #fi
 #
-curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
+#curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/Desktop/sysctl.conf -s
 #
 echo 'Working...'
 sleep 2
@@ -39,7 +39,7 @@ CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
-if [ $FILENAME == "null" ]; then
+if [ $FILENAME == null ]; then
    echo "Failed. Check network connection."
    exit 0
 fi
