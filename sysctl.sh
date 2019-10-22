@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sipChecker=sudo csrutil status
+disableSIP=Please disable SIP and re-run script.
 
 if [ "${sipChecker}" != "disabled." ]; then
     echo "${disableSIP}";
