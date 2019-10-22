@@ -1,4 +1,13 @@
-sudo echo '##                     (10%)'
+#!/bin/bash
+
+sudo csrutil status
+if enabled 
+then 
+  echo Stop 
+exit 1
+fi
+
+echo '##                     (10%)'
 sleep 1
 echo '#####                     (33%)\r'
 sleep 1
