@@ -36,6 +36,7 @@ sleep 1
 echo '###################       (78%)\r'
 sleep 1
 echo '#######################   (100%)\r'
+echo "\n"
 sleep 2
 #
 if test -e ~/desktop/sysctl.conf; then
