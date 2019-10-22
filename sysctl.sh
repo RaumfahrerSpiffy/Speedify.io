@@ -29,9 +29,9 @@ FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 
 if [ $TIMEDIFF -gt $OLDTIME ]; then
-   echo "Failed, check network connection."
+   echo "Failed. Check network connection."
 fi
 
-if [ $OLDTIME -le $TIMEDIFF ]; then 
+if [ $OLDTIME -lt $TIMEDIFF ]; then 
    echo "Completed succesfully. Please reboot."
 fi
