@@ -2,7 +2,7 @@
 
 sipChecker=sudo csrutil status
 disableSIP=Please disable SIP and re-run script.
-FILE=/etc/sysctl.conf
+FILE=~/desktop/sysctl.conf
 OLDTIME=2
 CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
