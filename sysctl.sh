@@ -39,16 +39,16 @@ FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
 if [ -f "$FILE" ]; then
-   echo "$FILE exist"
+   echo "Download complete."
 else 
-    echo "$FILE does not exist"
+    echo "Critical fault. Expected file does not exist. Check network connection."
    exit 0
 fi
 #
 if [ $TIMEDIFF -gt $OLDTIME ]; then
-   echo "Failed. Check network connection."
+   echo "Failed. Unable to access required directory."
 fi
 #
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
-   echo "Completed succesfully. Please reboot."
+   echo "Task succesful. Please reboot."
 fi
