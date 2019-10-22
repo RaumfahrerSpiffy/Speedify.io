@@ -38,7 +38,8 @@ echo '\n'
 sleep 2
 #
 if test -e ~/desktop/sysctl.conf; then
-   echo "Download complete."
+   echo "DOWNLOAD COMPLETE"
+   sleep 2
 else 
    echo "CRITICAL FAULT"
    sleep 2
@@ -55,7 +56,7 @@ FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
 if [ $TIMEDIFF -gt $OLDTIME ]; then
-   echo "FAILED"
+   echo "CRITICAL FAULT"
    sleep 2
    echo "UNABLE TO ACCESS REQUIRED LOCAL DIRECTORY"
    sleep 2
