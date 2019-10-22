@@ -1,4 +1,4 @@
-#  tcpTuning.io
+#  Optimise macOS internet connections
 
 ## Explanation
 
