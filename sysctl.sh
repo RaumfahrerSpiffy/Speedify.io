@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #sipChecker=sudo csrutil status
-disableSIP=Please disable SIP and re-run script.
+#disableSIP=Please disable SIP and re-run script.
 FILE=~/desktop/sysctl.conf
 OLDTIME=10
 CURTIME=$(date +%s)
