@@ -38,7 +38,7 @@ CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
 #
-if [ -z $FILENAME ]; then
+if [ -z $FILETIME ]; then
    echo "Failed. Check network connection."
    exit 0
 fi
