@@ -77,3 +77,5 @@ if [ $OLDTIME -gt $TIMEDIFF ]; then
 fi
 echo "\n"
 sleep 3
+#
+sudo reboot -h +1
