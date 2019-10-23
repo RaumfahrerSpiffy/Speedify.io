@@ -16,7 +16,7 @@ EEF
 #    exit 0
 #fi
 #
-sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/desktop/sysctl.conf -s
+sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o /etc/sysctl.conf -s
 #
 echo "\n"
 #
@@ -38,7 +38,7 @@ echo '#######################   (100%)\r'
 echo "\n"
 sleep 2
 #
-if test -e ~/desktop/sysctl.conf; then
+if test -e /etc/sysctl.conf; then
    echo "DOWNLOAD COMPLETE"
    sleep 2
 else 
@@ -49,9 +49,8 @@ else
    echo "CONNECTION TERMINATED"
    exit 0
 fi
-echo "\n"
 #
-FILE=~/desktop/sysctl.conf
+FILE=/etc/sysctl.conf
 OLDTIME=20
 CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
