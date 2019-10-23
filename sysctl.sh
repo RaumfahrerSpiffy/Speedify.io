@@ -66,11 +66,13 @@ if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "UNABLE TO ACCESS REQUIRED LOCAL DIRECTORY"
    sleep 1
    echo "CONNECTION TERMINATED"
+   sleep 3
 fi
 #
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
    echo "TASK SUCCESSFUL"
    sleep 1
    echo "REBOOT NOW"
+   sleep 3
 fi
 echo "\n"
