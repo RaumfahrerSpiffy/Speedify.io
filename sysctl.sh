@@ -78,4 +78,4 @@ fi
 echo "\n"
 sleep 3
 #
-sudo shutdown -r +1
+osascript -e 'tell application "System Events" to restart'
