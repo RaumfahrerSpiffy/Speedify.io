@@ -8,13 +8,13 @@ ___] |    |___ |___ |__/ | |      |   .| |__|
 ==============================================
 EEF
 #
-#SIPchecker=($(csrutil status | awk '{ print $5 }'))
-#if [ "$SIPchecker" != "disabled." ]; then
-#    echo "Disable SYSTEM INTEGRITY PROTECTION...then re-run script"
-#    sleep 1
-#    echo "Refer to README for help";
-#    exit 0
-#fi
+SIPchecker=($(csrutil status | awk '{ print $5 }'))
+if [ "$SIPchecker" != "disabled." ]; then
+    echo "Disable SYSTEM INTEGRITY PROTECTION...then re-run script"
+    sleep 1
+    echo "Refer to README for help";
+    exit 0
+fi
 #
 curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o ~/desktop/sysctl.conf -s
 #
