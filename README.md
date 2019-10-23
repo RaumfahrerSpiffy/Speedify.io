@@ -1,4 +1,4 @@
-#  Speedify for macOS 
+#  Speedify TCP optimiser 
 
 ## Introduction
 
