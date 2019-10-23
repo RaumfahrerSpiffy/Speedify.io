@@ -62,13 +62,13 @@ if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "CRITICAL FAULT"
    sleep 2
    echo "UNABLE TO ACCESS REQUIRED LOCAL DIRECTORY"
-   sleep 2
+   sleep 1
    echo "CONNECTION TERMINATED"
 fi
 #
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
    echo "TASK SUCCESSFUL"
-   sleep 2
+   sleep 1
    echo "REBOOT NOW"
 fi
 echo "\n"
