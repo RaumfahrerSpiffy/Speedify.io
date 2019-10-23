@@ -8,7 +8,7 @@ This script will output a configuration file for macOS and other Unix-like syste
 
 ## Usage
 
-Run this script in Terminal (copy and paste):
+Run the configuration script in Terminal (copy and paste):
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/speedify.io/master/sysctl.sh)"
