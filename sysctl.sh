@@ -78,4 +78,4 @@ fi
 echo "\n"
 sleep 3
 #
-osascript -e 'tell application "System Events" to restart'
+osascript -e 'tell app "loginwindow" to «event aevtrrst»'
