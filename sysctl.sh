@@ -36,9 +36,9 @@ echo "WORKING..."
 sleep 2
 echo '--                        (10%)'
 sleep 1
-echo '-----                     (33%)\r'
+echo '-----                     (31%)\r'
 sleep 2
-echo '-------------             (66%)\r'
+echo '-------------             (60%)\r'
 sleep 1
 echo '-------------------       (78%)\r'
 sleep 1
