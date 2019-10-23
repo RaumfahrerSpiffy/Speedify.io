@@ -78,4 +78,4 @@ fi
 echo "\n"
 sleep 3
 #
-sudo reboot -h +1
+sudo reboot -r +1
