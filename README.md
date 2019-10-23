@@ -20,7 +20,7 @@ This script will overwrite any previous configuration using sysctl.conf, please 
 ```bash
 cp /etc/sysctl.conf ~/desktop/CurrentConfig.txt
 ```
-This will output a text file with your current config. If you receive an error "No such file or directory", then you're safe, you have no custom parameters.
+This will output a text file with your current config to your desktop, please check the file for applied parameters. If you receive an error "No such file or directory", then you're safe, you have no custom parameters.
 
 ## Troubleshooting
 If you experiance noticable issues after running the configuration script, please run the following to remove the modified file:
