@@ -50,14 +50,13 @@ else
    echo "CONNECTION TERMINATED"
    exit 0
 fi
+echo "\n"
 #
 FILE=~/desktop/sysctl.conf
 OLDTIME=20
 CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
-#
-echo "\n"
 #
 if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "CRITICAL FAULT"
@@ -67,10 +66,9 @@ if [ $TIMEDIFF -gt $OLDTIME ]; then
    echo "CONNECTION TERMINATED"
 fi
 #
-echo "\n"
-#
 if [ $OLDTIME -gt $TIMEDIFF ]; then 
    echo "TASK SUCCESSFUL"
    sleep 2
    echo "REBOOT NOW"
 fi
+echo "\n"
