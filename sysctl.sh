@@ -21,10 +21,12 @@ echo "AUTHENTICATING"
 #
 sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o /etc/sysctl.conf -s
 #
-sleep 2
+sleep 1
 echo "ACCESS GRANTED"
 #
 echo "\n"
+#
+sleep 1
 #
 echo "INITIALISING CONNECTION"
 sleep 2
@@ -35,11 +37,11 @@ sleep 2
 echo '--                        (10%)'
 sleep 1
 echo '-----                     (33%)\r'
-sleep 1
+sleep 2
 echo '-------------             (66%)\r'
 sleep 1
 echo '-------------------       (78%)\r'
-sleep 1
+sleep 2
 echo '-----------------------   (100%)\r'
 echo "\n"
 sleep 2
@@ -57,7 +59,7 @@ else
 fi
 #
 FILE=/etc/sysctl.conf
-OLDTIME=20
+OLDTIME=30
 CURTIME=$(date +%s)
 FILETIME=$(stat -t %s -f %m $FILE)
 TIMEDIFF=$(expr $CURTIME - $FILETIME)
