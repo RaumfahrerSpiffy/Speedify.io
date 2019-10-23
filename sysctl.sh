@@ -7,6 +7,7 @@ cat << EEF
  ______| |       |______ |______ |_____/ __|__ |          |    . __|__ |_____|                                                                                                                        
 ===============================================================================
 EEF
+sleep 2
 #
 #SIPchecker=($(csrutil status | awk '{ print $5 }'))
 #if [ "$SIPchecker" != "disabled." ]; then
@@ -16,7 +17,6 @@ EEF
 #    exit 0
 #fi
 #
-sleep 1
 echo "AUTHENTICATING"
 #
 sudo curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/tcptuning.io/master/sysctl.conf -o /etc/sysctl.conf -s
