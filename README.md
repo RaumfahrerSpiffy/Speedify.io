@@ -8,23 +8,25 @@ This script will output a configuration file for macOS and other Unix-like syste
 
 ## Usage
 
-Run this script in Terminal and enter your password when prompted.
+Run this script in Terminal (copy and paste):
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/speedify.io/master/sysctl.sh)"
 ```
-Reboot.
 
 ## *Note:*
-System Integrity Protection must be disabled to access the intended file location. To disable, reboot into the Recovery Partition by pressing ⌘+R at boot until the Apple logo appears. 
-Run this command in Terminal:
+This script will overwrite any previous configuration using sysctl.conf, please make sure to backup your configuration. If you are unsure if you an existing configuration run this script:
 
 ```bash
-csrutil disable
+cp /etc/sysctl.conf ~/desktop/CurrentConfig.txt
 ```
+This will output a text file with your current config. If you receive an error "No such file or directory", then you're safe, you have no custom parameters.
 
-After using the script you can re-enable SIP by swapping the above command with:
+## Troubleshooting
+If you experiance noticable issues after running the configuration script, please run the following to remove the modified file:
 
 ```bash
-csrutil enable
+sudo unlink /etc/sysctl.conf
 ```
+
+Then reboot.
