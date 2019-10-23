@@ -28,15 +28,15 @@ echo "CONNECTION SECURED"
 sleep 2
 echo "WORKING..."
 sleep 2
-echo '##                        (10%)'
+echo '--                        (10%)'
 sleep 1
-echo '#####                     (33%)\r'
+echo '-----                     (33%)\r'
 sleep 1
-echo '#############             (66%)\r'
+echo '-------------             (66%)\r'
 sleep 1
-echo '###################       (78%)\r'
+echo '-------------------       (78%)\r'
 sleep 1
-echo '#######################   (100%)\r'
+echo '-----------------------   (100%)\r'
 echo "\n"
 sleep 2
 #
