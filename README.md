@@ -30,3 +30,4 @@ sudo unlink /etc/sysctl.conf
 ```
 
 Then reboot.
+I welcome any issue reports and will do my best to address problems as they arise.
