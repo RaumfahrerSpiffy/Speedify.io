@@ -31,7 +31,7 @@ sleep 1
 echo "INITIALISING CONNECTION"
 sleep 2
 echo "CONNECTION SECURED"
-sleep 2
+sleep 1
 echo "WORKING..."
 sleep 2
 echo '--                        (10%)'
@@ -41,7 +41,7 @@ sleep 2
 echo '-------------             (66%)\r'
 sleep 1
 echo '-------------------       (78%)\r'
-sleep 2
+sleep 1
 echo '-----------------------   (100%)\r'
 echo "\n"
 sleep 2
