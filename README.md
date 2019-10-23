@@ -1,4 +1,4 @@
-#  Speedify.io for macOS 
+#  Speedify for macOS 
 
 ## Introduction
 
