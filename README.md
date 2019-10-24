@@ -8,7 +8,7 @@ This script will output a configuration file for macOS and other BSD-like system
 
 ## Usage
 
-Download the App and run it [Speedify](https://github.com/RaumfahrerSpiffy/Speedify.io/raw/master/Speedify.app.zip)
+Download the [App](https://github.com/RaumfahrerSpiffy/Speedify.io/raw/master/Speedify.app.zip) and run it. The app will always fetch and install the latest parameters, you only need download it once.
 
 OR
 
