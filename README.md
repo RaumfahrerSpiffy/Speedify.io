@@ -12,7 +12,7 @@ Download the [App](https://github.com/RaumfahrerSpiffy/Speedify.io/raw/master/Sp
 
 OR
 
-Run the configuration script in Terminal (copy and paste):
+Manually run the configuration script from the command line:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/speedify.io/master/sysctl.sh)"
