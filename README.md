@@ -4,7 +4,7 @@
 
 This script will output a configuration file for macOS and other BSD-like systems (sysctl.conf) with modified kernel and TCP stack settings designed to optimise network throughput and minimise latency. These settings will be applied at boot. The modified paremeters are intended for a client device on a home network over either ethernet or WiFi 802.11n/ac with a download speed of 50mbps-100mbps from your ISP.
 
-*Tested up to macOS 11 BigSur | File revision 1.2 | 10/25/2020*
+*Tested up to macOS 11.0 BigSur | File revision 1.2 | 10/25/2020*
 
 ## Usage
 
