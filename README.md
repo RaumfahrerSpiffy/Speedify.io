@@ -16,7 +16,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/raumfahrerspiffy/speedify.
 ![RUN](./img/run.png)
 
 ## *Note:*
-This script will overwrite any previous configuration using sysctl.conf, please make sure to backup your configuration. If you are unsure if you have an existing configuration run this script:
+This script will overwrite any previous configuration using sysctl.conf, please make sure to backup your configuration. If you are unsure if you have an existing configuration run this command:
 
 ```bash
 cp /etc/sysctl.conf ~/desktop/CurrentConfig.txt
