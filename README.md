@@ -1,4 +1,4 @@
-#  Speedify TCP optimiser 
+#  Speedify TCP optimiser
 
 ## Introduction
 
